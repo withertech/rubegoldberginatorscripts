@@ -1,5 +1,4 @@
 #!/bin/bash
-#echo test > /root/test123
-if [ -f /root/message.txt ]; then
+if [ -f /root/rube-files/message.txt ]; then
      python3 /root/scripts/qrgen.py
 fi
