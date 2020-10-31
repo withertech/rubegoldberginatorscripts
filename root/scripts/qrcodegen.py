@@ -28,6 +28,6 @@ with open("qrcode.png", "rb") as file:
 binurl = "https://api.jsonbin.io/v3/b/5f9dc3253269193b17bfec93"
 headers = {"Content-Type": "application/json",
            "X-Master-Key": ""}
-data = {"code": imgurl}
+data = {"imageurl": imgurl}
 req = requests.put(url, json=data, headers=headers)
 print(req.text)
