@@ -5,10 +5,10 @@ import requests
 import base64
 import os
 import json
-f = open("/root/message.txt", "r")
+f = open("/root/rube-files/message.txt", "r")
 
 img = qrcode.make(f.read())
-os.remove("/root/message.txt")
+os.remove("/root/rube-files/message.txt")
 
 print(type(img))
 print(img.size)
