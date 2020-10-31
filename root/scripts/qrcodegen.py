@@ -25,8 +25,9 @@ with open("qrcode.png", "rb") as file:
     u = j['data']
     imgurl = u['url']
     print(imgurl)
-binurl = "https://api.jsonbin.io/v3/b/5f9dc3253269193b17bfec93
-headers = {"Content-Type": "application/json"}
+binurl = "https://api.jsonbin.io/v3/b/5f9dc3253269193b17bfec93"
+headers = {"Content-Type": "application/json",
+           "X-Master-Key": ""}
 data = {"code": imgurl}
 req = requests.put(url, json=data, headers=headers)
 print(req.text)
