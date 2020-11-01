@@ -17,7 +17,7 @@ imgurl = ""
 with open("qrcode.png", "rb") as file:
     url = "https://api.imgbb.com/1/upload"
     payload = {
-        "key":"f048206a78bff2540368b9376f2c7fb3",
+        "key":"",
         "image": base64.b64encode(file.read()),
     }
     res = requests.post(url, payload)
