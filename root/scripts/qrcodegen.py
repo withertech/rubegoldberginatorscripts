@@ -31,3 +31,4 @@ headers = {"Content-Type": "application/json",
 data = {"imageurl": imgurl}
 req = requests.put(url, json=data, headers=headers)
 print(req.text)
+# NzcxOTI0MDI1MDU5NzA0ODkz.X5zMRQ.i-xVdTjDigOmLs_XMQreIIawZO4
